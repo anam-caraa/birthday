@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h2 class = "header_text">Hey Buddy!! It's your Birthday</h2>
+                <h2 class = "header_text">I have something for your and to watch it</h2>
+                <h2 class = "header_text">Click Yes</h2>
+                <h4 style="color: white;">PS: Don't worry this is not created from any expectations. I know your mind must be full of things but open it without thinking about anything</h4>
+            </div>
+            <div class="gif_container">
+                <img src="https://media4.giphy.com/media/YMdExG8wRmNxtMQBJe/giphy.gif?cid=ecf05e47oscvgdfauvw07uzrxemsii9zztu63z9mhjba7yft&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "birthday card/index.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
